@@ -1,0 +1,513 @@
+/*General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Inconsolata&family=Notable&display=swap');
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.4;
+  font-family: Arial, sans-serif,
+  color: #484848;
+  overflow-x: hidden;
+}
+
+/*Utility Classes*/
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-primary{
+  color: #b3003b;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark{
+  background: #333;
+  color: #fff;
+}
+
+/*Navbar*/
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  background: #ff9966;
+  color: #fff;
+  padding: 1.5rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom: 3px solid #333333;
+}
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar h2 a{
+  color: #fff;
+  text-decoration: none;
+}
+
+#navbar li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.70rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: #484848;
+}
+
+
+
+
+/*Showcase Area*/
+.showcase-image{
+  background-image: url(images/trial7.jpg);
+  background-size: contain;
+  height: 91.7vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 40px;
+  opacity: 8;
+  filter: blur(2px);
+  -webkit-filter: blur(1px);
+}
+
+
+.showcase-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-weight: bolder;
+  font: Garamond;
+}
+
+.showcase-content h1{
+  font: Bangers;
+  font-size: 6rem;
+  margin-bottom: 10rem;
+  margin-top: 7rem;
+  color:  white;
+  font: Courier;
+  background-color: white;
+  color: black;
+  display: inline;
+  padding: 0.25rem;
+}
+
+.showcase-content{
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  opacity: 85%;
+}
+
+
+
+.showcase-content .btn{
+  margin-top: 7;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem 10rem;
+  transition: color 0.3s, background 0.3s;
+}
+
+.showcase-content .btn:hover {
+  background: 	#A9A9A9;
+  color: black;
+}
+
+.btn{
+  color: 	#A9A9A9;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid 	#A9A9A9;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+
+
+/*Section:About*/
+#about{
+  padding: 5rem 0;
+}
+
+#about h2, services h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+}
+
+#about h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p.lead{
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+#about .about-content{
+  display: flex;
+}
+
+#about .about-text,
+#about .about-image{
+  flex: 1;
+}
+
+#about .about-text{
+  text-align: justify;
+}
+
+#about .about-image img{
+  margin-top: 60px;
+  border-radius: 40%;
+  display: block;
+  margin-left: auto;
+  width: 75%
+}
+
+
+
+/*Section: Quote1*/
+
+#Quote1 {
+  background-image: url(images/art1.jpg);
+  background-size: contain;
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  background-attachment: fixed;
+}
+
+#Quote1-bg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  padding: 5rem 0;
+}
+
+#Quote1 h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+#Quote1 .boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+#Quote1 .box{
+  background: rgba(54,147,255,0.7);
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #686868;
+  opacity: 0.95;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: Black;
+  font-style: italic;
+}
+
+
+#Quote1 .box:first-child, #Quote1 .box:nth-child(2){
+  margin-bottom: 3rem;
+  margin-top: 7rem;
+}
+
+#Quote1 .box img{
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+#Quote1 p {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  font-style: oblique;
+
+}
+
+/*section: info1*/
+#infographics{
+  height: auto;
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+#infographics p{
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+/*section: info2*/
+  #info2{
+    height: 50vh;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+/*section: info3*/
+  #info3{
+    height: 25vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 500px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*Section: Experience2*/
+
+#Quote2 {
+  background-image: url(images/art2.jpg);
+  background-size: contain;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  background-attachment: fixed;
+}
+
+#Quote2-bg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  padding: 5rem 0;
+}
+
+#Quote2 h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+#Quote2 .boxes{
+  display: flex;
+  flex-direction: column;
+}
+
+#Quote2 .box{
+  background: rgba(54,147,255,0.7);
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: #686868;
+  opacity: 0.95;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: Black;
+  font-style: italic;
+}
+
+
+#Quote2 .box:first-child, #Experience2 .box:nth-child(2){
+  margin-bottom: 3rem;
+  margin-top: 7rem;
+}
+
+#Quote2 .box img{
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+#Quote2 p {
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  font-style: oblique;
+}
+
+
+
+
+
+/*filmakers*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  box-sizing: border-box;
+}
+
+.testimonial-section{
+  background: #f1f1f1;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.testimonial-section h1{
+  font-weight: 400;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.testimonial-pics{
+  padding: 40px 0;
+}
+
+.testimonial-pics img{
+  width: 225px;
+  height: 250px;
+  border-radius: 90%;
+  margin: 0 20px;
+  filter: grayscale(100%);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.testimonial-pics img:hover, .testimonial-pics img.active{
+  filter: none;
+}
+
+
+.testimonial-contents{
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial{
+  display: none;
+}
+
+.testimonial.active{
+  display: block;
+}
+
+.testimonial p{
+  color: #5c5c5c;
+  margin-bottom: 20px;
+}
+
+.testimonial .description{
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+
+
+
+  /*section: Skills*/
+  #Skills{
+    padding: 5rem 0;
+  }
+
+  #Skills h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  #Skills .boxes{
+    display: flex;
+  }
+
+  #Skills .box{
+    background: #fff;
+    flex: 1;
+    padding: 3rem;
+    margin: 0 3rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #d1d1d1;
+    font-size: 1.5rem;
+    color: #e65c00;
+  }
+
+  #Skills .box i{
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    padding: 1rem;
+    background: #3693ff;
+    border-radius: 50%
+  }
+
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+  padding: 3.5rem;
+}
+
+footer p{
+  text-align: center;
+}
